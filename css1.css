@@ -1,0 +1,64 @@
+.parent {
+  margin-bottom: 20px;
+  overflow: hidden;
+  counter-increment: members-count;
+}
+.one {
+  background-color: #eee;
+  padding: 10px;
+  width: 600px;
+  float: left;
+  position: relative;
+}
+.one::after {
+  content: counter(members-count);
+  position: absolute;
+  background-color: red;
+  color: wheat;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  top: 50%;
+  margin-top: -10px;
+}
+.one::before {
+  content: attr(data-text);
+  display: none;
+  background-color: blueviolet;
+  padding: 13px;
+}
+.one:hover::before {
+  display: inline-block;
+}
+ul {
+  list-style: none;
+}
+li {
+  position: relative;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+ul li:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -20px;
+  top: 50%;
+  margin-top: -5px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent green transparent transparent;
+}
+
+.user {
+  background-color: #eee;
+  width: 50px;
+  margin-right: 20px;
+  padding: 10px;
+  height: 55.5px;
+  float: left;
+  font-size: 50px;
+  text-align: center;
+}
