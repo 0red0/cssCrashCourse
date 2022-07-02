@@ -1311,7 +1311,7 @@ p {
      parent properties:
       ^^^^^^^^^^^^^^^
 display:  grid ; inline-grid
-grid-template-columns: (px, %, auto, 1fr, repeat(), mix) 
+grid-template-columns: (px, %, auto, 1fr, minmax(), auto-fit repeat(), mix) 
 gap: [row-gap] [column-gap]
 justify-content: center;
 align-items: end;
@@ -1388,4 +1388,30 @@ grid-area: row-start / col-start / row-end / col-end;
 div .child4 {
   background-color: lime;
   grid-area: 3 / 5 / 6 / 8;
+}
+
+
+/* 
+     &*&* css#63 Grids minmax() / auto-fill / auto-fit *&*&
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.parent {
+  margin: 20px;
+  height: 500px;
+  background-color: #ddd;
+  display: grid;
+  grid-template-columns: minmax(200px, 400px) repeat(2, 500px) ;
+  grid-template-columns: repeat(auto-fill, 200px);
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.parent div {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
