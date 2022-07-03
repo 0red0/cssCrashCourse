@@ -1312,6 +1312,7 @@ p {
       ^^^^^^^^^^^^^^^
 display:  grid ; inline-grid
 grid-template-columns: (px, %, auto, 1fr, minmax(), auto-fit repeat(), mix) 
+grid-template-areas: "grid area element names" formation
 gap: [row-gap] [column-gap]
 justify-content: center;
 align-items: end;
@@ -1353,6 +1354,7 @@ align-content: space-around;
 grid-column: span n
 grid-row: start / end
 grid-area: row-start / col-start / row-end / col-end;
+grid-area: name ;
 */
 
 * {
