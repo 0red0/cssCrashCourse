@@ -1,3 +1,10 @@
 {
-  "git.enabled": false
+	"git.enabled": false,
+	"html.format.indentHandlebars": false,
+	"html.format.indentInnerHtml": true,
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"prettier.useTabs": true,
+	"prettier.vueIndentScriptAndStyle": true,
+	"editor.wrappingIndent": "indent"
 }
