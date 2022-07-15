@@ -1,19 +1,10 @@
 /* HTML for css#1 to #29 */
 
-/* <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="practiceWithElzero.css" />
-  </head>
-  <body>
+/* 
   <p class="myP1">
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis nihil
       asperiores error rerum adipisci
-      </p>
+   </p>
       <div class="div1">
       links considered as one word. Lorem ipsum dolor sit, amet consectetur
       adipisicing elit. Eius, accusamus, illum provident voluptatem vel quos
@@ -392,25 +383,10 @@ div {
 	top: 0;
 }
 
-/* <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Learn JavaScript</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+/* 
     <div class="one">one</div>
     <div class="two">two</div>
     <div class="three">three</div>
-    
-
-    </div>
-    <script src="script.js"></script>
-  </body>
-</html> */
 
 /* z-index requires positioned elements */
 
@@ -440,17 +416,7 @@ div {
 	z-index: 1;
 }
 
-/* <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Learn JavaScript</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h3>Title</h3>
+/*  <h3>Title</h3>
     <ul>
       <li>HTML</li>
       <li>CSS</li>
@@ -462,11 +428,8 @@ div {
         </ul>
       </li>
     </ul>
-
     </div>
-    <script src="script.js"></script>
-  </body>
-</html> */
+   */
 
 /* list-style-type : ul - li - ol */
 li {
@@ -481,16 +444,7 @@ ul {
 	list-style-image: url("https://freepngimg.com/thumb/star/1-red-star-png-image-thumb.png");
 }
 
-/* <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Learn JavaScript</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+/* 
     <table>
       <thead>
         <tr>
@@ -523,9 +477,7 @@ ul {
         </tr>
       </tbody>
     </table>
-    <script src="script.js"></script>
-  </body>
-</html> */
+ */
 
 /* styling tables with css*/
 
@@ -547,16 +499,7 @@ table thead td {
 	border-color: lightgoldenrodyellow;
 }
 
-/* <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Learn JavaScript</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+/* 
     <div class="one">Normal Element</div>
     <hr>
     <div class="two"></div>
@@ -645,15 +588,7 @@ div:empty {
 	color: yellow;
 }
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>CSS</title>
-    <link rel="stylesheet" href="practiceWithElzero.css" />
-  </head>
-  <body>
-    <div class="parent">
+/* <div class="parent">
       <div class="user">O</div>
       <div class="one" data-text="Something">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum labore
@@ -687,10 +622,7 @@ div:empty {
       <li>One</li>
       <li>One</li>
     </ul>
-  </body>
-</html>
-
-
+  </body> */
 
 /* css#36 ::before ::after pseudo elements */
 
@@ -727,7 +659,7 @@ div:empty {
 	border-color: transparent green transparent transparent;
 }
 
-/* css#37 content counter li style  */
+/* css#37 content counter property on li style  */
 
 /* .parent {
   margin-bottom: 20px;
@@ -1170,8 +1102,7 @@ and the solution is to order the entire elements (I don't know if i can use a lo
 	display: inline-block;
 }
 
-/* css#54 Filters
- */
+/* ///// css#54 Filters \\\\\\*/
 
 /* <div><img src="code2.jpg" alt="" /></div> */
 
@@ -1227,7 +1158,7 @@ quod voluptatibus laudantium, aliquid numquam consequuntur deserunt
 repudiandae autem ab esse.
 </p> */
 
-/* css#56 Caret color / pointer events */
+/* css#56 Caret color the flashy |  / pointer events */
 
 * {
 	caret-color: yellowgreen;
@@ -1236,7 +1167,7 @@ p:hover {
 	color: red;
 }
 p {
-	pointer-events: none;
+	pointer-events: none; like click
 
 	/* stops any events on the elements */
 }
@@ -1599,3 +1530,44 @@ div:hover {
 - 	:focus
 - 	::selection  change the selection color
 - 	::placeholder   control :placeholder styles
+
+/* css#83-84-85 mediaquaries 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="print.css" media="print">
+<style media="print"> .parent > div {color:red;}</style>
+</head>
+*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+.parent {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.parent div {
+	padding: 20px;
+	background-color: red;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	width: 100%;
+	margin-bottom: 5px;
+}
+/* Mobile */
+@media (max-width: 767px) {
+}
+/* small devices */
+@media (min-width: 768px) and (max-width: 991px) {
+	.parent div {
+		width: calc(50% - 10px);
+	}
+}
+@media (min-width: 992px) {
+	.parent div {
+		width: calc(33% - 5px);
+	}
+}
